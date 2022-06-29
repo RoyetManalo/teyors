@@ -186,4 +186,15 @@ export default {
     left: 2.5rem;
   }
 }
+
+@media (max-width: 400px) {
+  #projects .project-content .view {
+    width: 75%;
+  }
+}
+@media (max-width: 360px) {
+  #projects .project-content .view {
+    width: 70%;
+  }
+}
 </style>
