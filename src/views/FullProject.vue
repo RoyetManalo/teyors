@@ -111,11 +111,11 @@ export default {
     } else if (this.$route.params.params === "Queueing-System") {
       this.title = "Queueing System";
       this.description =
-        "A QR-Based Queueing System for getting COVID-19 vaccine in my hometown. This is a personal project of mine to enhance my Vue JS Skills and knowledge. This system have an admin and client endpoint, the admin has access to the creating, editing, deleting and viewing a person's data,it also has access to  what brand of vaccine is available for a person to take. The client can fill up the information sheet for their pre-vaccine queue card, it includes firstname, lastname, age, vaccine brand and dose number. Then it was recorded in the admin database and the client will get a pdf file that has a QR Code and all of their info. The admin will scan the QR Code to verify that they are in the right queue number";
+        "A QR-Based Queueing System for getting COVID-19 vaccine in my hometown. This is a personal project of mine to enhance my Vue JS and Express.js skills and knowledge. This system have an admin and client endpoint, the admin has access to the creating, editing, deleting and viewing a person's data, it also has access to what brand of vaccine is available for a person to take. The client can fill up the information sheet for their pre-vaccine queue card, it includes firstname, lastname, age, vaccine brand and dose number. Then it was recorded in the admin database and the client will get a pdf file that has a QR Code and all of their info. The admin will scan the QR Code to verify that they are in the right queue number";
       this.stacks = ["Vue.js", "Express.js", "Mongodb", "Heroku"];
       this.img = `${require("@/assets/projects/QS.png")}`;
       this.reason =
-        "The idea about building this software is because of my frustration on how my local health care center handle the queue of people that want to get the COVID-19 vaccine. They are just giving a piece of paper with number to determine whose in the current queue.In my mind what if there software that can solve this problem using QR Code, someone in the health care will only have to scan a QR Code and the system will verify it, and so the people in queue will spend less time standing and waiting for them to be called. So I decided to built this webapps that will solve this problem";
+        "The idea about building this software is because of my frustration on how my local health care center handle the queue of people that want to get the COVID-19 vaccine. They are just giving a piece of paper with number to determine whose in the current queue. In my mind what if there software that can solve this problem using QR Code, someone in the health care will only have to scan a QR Code and the system will verify it, and so the people in queue will spend less time standing and waiting for them to be called. So I decided to built this webapps that will solve this problem";
       this.liveLink = "https://sehcqs.herokuapp.com/";
       this.githubLink =
         "https://github.com/RoyetManalo/Vue-QR-Based-Queueing-System";
@@ -126,7 +126,7 @@ export default {
       this.stacks = ["React.js", "Express.js", "Mongodb", "Heroku"];
       this.img = `${require("@/assets/projects/QP.jpg")}`;
       this.reason =
-        "As a developer myself. i sometimes forgot how to do certain this while developing a software, and I know I’m not the only one who encounter this kind of problem. A lot of you will say, “that’s why there’s a documentation,and stackoverflow for you to get the answer that you’re looking for in dealingwith your development problems that you may encounter along the way. But what if there is a dedicated platform where us developers can store all our code snippets for future purposes and also see what others developers codesnippets is";
+        "As a developer myself. I sometimes forgot how to do certain this while developing a software, and I know I’m not the only one who encounter this kind of problem. A lot of you will say, “that’s why there’s a documentation,and stackoverflow for you to get the answer that you’re looking for in dealing with your development problems that you may encounter along the way. But what if there is a dedicated platform where us developers can store all our code snippets for future purposes and also see what others developers code snippets is.";
       this.liveLink = "https://quickpeek.herokuapp.com/";
       this.githubLink = "https://github.com/RoyetManalo/QuickPeek";
     }
@@ -232,6 +232,7 @@ h2 {
 
   .techStack {
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   p {

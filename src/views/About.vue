@@ -77,17 +77,17 @@
             I dont that have any copy of source code of all of the softwares
             that I built during college, cause my only laptop gave up on me, and
             I dont have any backup, back then I dont even know what Github is
-            hehehe.
+            😅.
           </p>
         </div>
         <div>
           <h2>Hardest time of my life as an aspiring developer</h2>
           <p>
             2018 was time that I temporarily part ways with programming due to
-            lack of access to a computer . I dont even know what I wanna do at
+            lack of access to a computer. I dont even know what I wanna do at
             that time, I was an intern at a Post Production Studio for Weddings
             as a Video Editor. Then I graduated in 2019, took a couple months of
-            vacation then the pademic hits, it sucks, i dont know what to do, i
+            vacation then the pandemic hits, it sucks, I dont know what to do, I
             dont have any access to a computer, a lot is going through my mind
             at that time and I started to give up on my dreams and become very
             confused if I should pursue my passion or try another thing.
@@ -108,9 +108,9 @@
             and PHP. I recreated the Student Management System. After that I
             started to learn a framework, Vue.js then I build the Alarmeme and
             the QR-Based Queueing System, then React.js where I build Quick
-            Peek.And here I am continuing the passion that I love and the career
-            that wanna have, learning more cool stuff from this world and see
-            where it takes me.
+            Peek. And here I am continuing the passion that I love and the
+            career that I wanna have, learning more cool stuff from this world
+            and see where it takes me.
           </p>
         </div>
       </section>
@@ -122,21 +122,24 @@
             <h2>Interest and hobbies</h2>
             <h3>When I’m not coding, here’s what I’m probably doing:</h3>
             <ul>
-              <li>Playing Computer Games</li>
+              <li>Playing Computer Games 🎮</li>
               <li>
                 Watching TV Series, Animes, Documentaries, History content
-                Educational content and some random sh*ts on the internet
+                Educational content and some random sh*ts on the internet 📺
               </li>
-              <li>Doing physical sports (Basketball, table tennis, biking)</li>
+              <li>
+                Doing physical sports (Basketball 🏀, table tennis 🏓, biking
+                🚴‍♂️)
+              </li>
             </ul>
           </div>
           <div class="texts">
             <h2>Random Facts</h2>
             <ul>
-              <li>Im a bit of a clown - i like making people laugh</li>
-              <li>I’m a foodie - i like to cook but i like eating more</li>
-              <li>Drawerist- i like to draw but im not good at it</li>
-              <li>Metalhead - i found something calming in metal music</li>
+              <li>Im a bit of a clown 🤡 - I like making other people laugh</li>
+              <li>I’m a foodie 🍖 - I like to cook but i like eating more</li>
+              <li>Drawerist ✏ - I like to draw but im not good at it</li>
+              <li>Metalhead 🤘 - I found something calming in metal music</li>
             </ul>
           </div>
         </div>
