@@ -1,30 +1,48 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="container">
+    <router-view></router-view>
+    <Footer />
   </div>
-  <router-view/>
 </template>
 
+<script>
+import Footer from "./components/Footer.vue";
+
+export default {
+  components: { Footer },
+};
+</script>
+
 <style>
+/* html {
+  scroll-behavior: smooth;
+} */
+@font-face {
+  font-family: Chalk;
+  src: url("./assets/font/KGBrokenVesselsSketch.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
+  background: #000;
+  /* scroll-behavior: smooth; */
 }
 
-#nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 </style>
