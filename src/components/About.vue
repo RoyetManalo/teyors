@@ -10,7 +10,7 @@
         <h1>Hey! That's me</h1>
         <p>
           I’m a graduate of Information Technology who really enjoy coding and
-          love learning new things.I build websites and webapps. My love and
+          love learning new things. I build websites and webapps. My love and
           passion about programming started during my freshman year in college,
           the feelings that I get when my program runs is unexplainable. And
           that is why here I am, continuing my passion because it makes me

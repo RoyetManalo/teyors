@@ -10,12 +10,11 @@
         <p>I build full stack webapps 👨‍💻</p>
         <p>I’m also a gamer 🎮</p>
       </div>
-      <div></div>
-      <div class="image" @click="change">
-        <Stacks class="stacks" :draw="draw" />
-        <img src="../assets/img/landing.png" alt="" v-if="draw" />
-        <img src="../assets/img/rlanding.png" alt="" v-else />
-      </div>
+    </div>
+    <div class="image" @click="change">
+      <Stacks class="stacks" :draw="draw" />
+      <img src="../assets/img/landing.png" alt="" v-if="draw" />
+      <img src="../assets/img/rlanding.png" alt="" v-else />
     </div>
   </section>
 </template>
@@ -50,29 +49,39 @@ export default {
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 #landing {
   position: relative;
   color: #fff;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   border-bottom: 1px solid #fff;
   /* overflow: hidden; */
 }
 
 #landing .image {
-  position: relative;
-  display: grid;
-  height: 100%;
-  padding-top: 3.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+  right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80%;
   cursor: pointer;
 }
 
-#landing img {
+#landing .image img {
   max-width: 100%;
-  width: 560px;
+  width: 550px;
   animation: fadein 2s;
+}
+
+#landing .content {
+  width: 60%;
+  padding-left: 6rem;
 }
 
 #landing .text {
@@ -108,7 +117,7 @@ export default {
 #landing .social {
   position: absolute;
   bottom: 5rem;
-  left: 5rem;
+  left: 6rem;
 }
 
 @keyframes fadein {
@@ -120,9 +129,25 @@ export default {
   }
 }
 
-@media (max-width: 1400px) {
-  #landing img {
+@media (max-height: 900px) {
+  #landing .image img {
     width: 500px;
+  }
+
+  #landing .stacks {
+    bottom: 6rem;
+    left: 0rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  #landing .image img {
+    width: 500px;
+  }
+
+  #landing .stacks {
+    bottom: 6rem;
+    left: 2rem;
   }
 
   .content {
@@ -159,18 +184,22 @@ export default {
 
 /* tablet */
 @media (max-width: 768px) {
-  #landing img {
+  #landing .content {
+    width: 100%;
+  }
+  #landing .image img {
     width: 400px;
     margin: 0 auto;
   }
 
   #landing .image {
     padding: 0;
+    height: 60%;
   }
 
   #landing .stacks {
     bottom: 3rem;
-    left: 6rem;
+    left: 0rem;
   }
 
   #landing .social {
@@ -179,7 +208,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 1.2rem; */
-    display: none;
+    /* display: none; */
   }
 
   .content {
@@ -191,22 +220,65 @@ export default {
   }
 
   .content .text h1 {
-    text-align: center !important;
+    text-align: left !important;
   }
   #landing .content .text h3 {
     font-size: 1.4rem;
-    text-align: center;
+    text-align: left;
   }
-  .content .text p {
-    display: none;
+  #landing .content .text p {
+    /* display: none; */
+    text-align: left;
+    font-size: 0.9rem;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
+  #landing .text h1 {
+    font-size: 2rem;
+    text-align: center !important;
+  }
+  #landing .text h3 {
+    font-size: 1rem;
+    text-align: center !important;
+  }
+  #landing .text p {
+    text-align: center !important;
+  }
+
+  #landing .image {
+    width: 90%;
+    height: 50%;
+  }
+  #landing .image img {
+    width: 300px;
+  }
+
+  #landing .content {
+    display: block;
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+
   #landing .stacks {
-    bottom: 3rem;
-    left: -2rem;
+    bottom: 2rem;
+    left: 5.5rem;
+  }
+
+  #landing .social {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  #landing .stacks {
+    left: 4rem;
+  }
+}
+@media (max-width: 390px) {
+  #landing .stacks {
+    left: 3rem;
   }
 }
 </style>

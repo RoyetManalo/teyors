@@ -101,4 +101,10 @@ export default {
     transform: translateY(-800px) rotate(720deg);
   }
 }
+
+@media (max-width: 480px) {
+  .circles {
+    width: 50%;
+  }
+}
 </style>
