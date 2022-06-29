@@ -13,7 +13,7 @@
     </div>
     <div class="image" @click="change">
       <Stacks class="stacks" :draw="draw" />
-      <img src="../assets/img/landing.png" alt="" v-if="draw" />
+      <img src="../assets/img/landing.png" alt="" v-if="draw" class="medraw" />
       <img src="../assets/img/rlanding.png" alt="" v-else />
     </div>
   </section>
@@ -279,6 +279,12 @@ export default {
 @media (max-width: 390px) {
   #landing .stacks {
     left: 3rem;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 700px) {
+  .medraw {
+    opacity: 0.5;
   }
 }
 </style>
