@@ -100,7 +100,7 @@ export default {
         "https://github.com/RoyetManalo/Student-Management-System-PHP";
     } else if (this.$route.params.params === "Alarmeme-Clock") {
       this.description =
-        "An alarm clock that shows dancing memes when alarms fires off";
+        "A Web-based alarm clock that shows different dancing memes when alarms fires off";
       this.title = "Alarmeme Clock";
       this.stacks = ["Vue.js", "Netlify"];
       this.img = `${require("@/assets/projects/Alarms.jpg")}`;
@@ -224,6 +224,10 @@ h2 {
     display: block;
   }
 
+  .stack h2 {
+    text-align: center;
+  }
+
   .link {
     display: flex;
     justify-content: space-between;
@@ -231,7 +235,8 @@ h2 {
   }
 
   .techStack {
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
 
