@@ -19,9 +19,10 @@ export default {};
   align-items: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .footer {
     display: block;
+    font-size: 0.9rem;
   }
 }
 </style>

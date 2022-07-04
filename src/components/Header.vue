@@ -4,7 +4,9 @@
       <i class="fas fa-bars"></i>
     </div>
     <div class="logo">
-      <router-link to="/">Teyor</router-link>
+      <router-link to="/">
+        <img src="../assets/img/Teyorslogo.png" alt=""
+      /></router-link>
     </div>
     <nav class="nav">
       <ul @mouseover="hover" :class="{ show: isActive }">
@@ -12,23 +14,50 @@
           <li>
             <router-link to="/about" id="about">about</router-link>
           </li>
-          <img src="../assets/img/slash.png" alt="" v-show="abouthover" />
+          <img
+            src="../assets/img/slash.png"
+            alt=""
+            v-show="abouthover"
+            class="slash"
+          />
         </div>
         <div class="div" @mouseleave="unhover">
           <li>
             <router-link to="/#projects" id="project">projects</router-link>
           </li>
-          <img src="../assets/img/slash.png" alt="" v-show="projecthover" />
+          <img
+            src="../assets/img/slash.png"
+            alt=""
+            v-show="projecthover"
+            class="slash"
+          />
         </div>
         <div class="div" @mouseleave="unhover">
           <li>
             <router-link to="/#contacts" id="contact">contacts</router-link>
           </li>
-          <img src="../assets/img/slash.png" alt="" v-show="contacthover" />
+          <img
+            src="../assets/img/slash.png"
+            alt=""
+            v-show="contacthover"
+            class="slash"
+          />
         </div>
         <div class="div" @mouseleave="unhover">
-          <li><router-link to="" id="cv">cv</router-link></li>
-          <img src="../assets/img/slash.png" alt="" v-show="cvhover" />
+          <li>
+            <a
+              href="https://www.dropbox.com/s/khim2nj8eiy5jw5/Royet_Manalo_Software_Engineer_CV.pdf?dl=0"
+              id="cv"
+              target="_blank"
+              >cv</a
+            >
+          </li>
+          <img
+            src="../assets/img/slash.png"
+            alt=""
+            v-show="cvhover"
+            class="slash"
+          />
         </div>
       </ul>
     </nav>
@@ -98,6 +127,10 @@ export default {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.logo img {
+  width: 50px;
+}
 ul {
   display: flex;
 }
@@ -125,7 +158,7 @@ a {
   position: relative;
 }
 
-img {
+.slash {
   position: absolute;
   /* bottom: 50%; */
   left: 50%;

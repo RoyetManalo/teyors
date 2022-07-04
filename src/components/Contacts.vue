@@ -2,12 +2,19 @@
   <section id="contacts">
     <div class="title">You can contact me through this:</div>
     <div class="content flex">
-      <div class="email flex">
-        <img src="../assets/img/email.png" alt="" /> contact@royetmanalo.com
+      <div class="email">
+        <a href="mailto:contact@teyors.com" class="emailLink flex">
+          <img src="../assets/img/email.png" alt="" />
+          contact@teyors.com</a
+        >
       </div>
       <div class="cv">
-        <router-link to="#" class="link flex"
-          ><img src="../assets/img/dl.png" alt="" />Download my cv</router-link
+        <a
+          href="https://www.dropbox.com/s/khim2nj8eiy5jw5/Royet_Manalo_Software_Engineer_CV.pdf?dl=0"
+          class="cvLink flex"
+          target="_blank"
+          ><img src="../assets/img/dl.png" alt="" class="dlPic" />Download my
+          cv</a
         >
       </div>
     </div>
@@ -25,6 +32,7 @@ export default {
   padding: 2rem;
 }
 .title {
+  font-family: Chalk;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -39,12 +47,25 @@ export default {
   align-items: center;
 }
 
-.link {
+.cvLink {
   color: #fff;
   text-decoration: none;
 }
 
-.cv:hover {
+.emailLink,
+.cvLink {
+  gap: 1rem;
+}
+.emailLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.email:hover.email img {
+  transform: scale(1.2);
+}
+
+.cv:hover.cv .dlPic {
   transform: scale(1.2);
 }
 
@@ -53,8 +74,8 @@ export default {
     font-size: 1.8rem;
   }
 
-  #contacts .email,
-  #contacts .link {
+  #contacts .emailLink,
+  #contacts .cvLink {
     justify-content: flex-start;
     font-size: 1.5rem;
   }
