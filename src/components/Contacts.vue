@@ -90,8 +90,8 @@ export default {
   #contacts .title {
     font-size: 1.5rem;
   }
-  #contacts .email,
-  #contacts .link {
+  #contacts .emailLink,
+  #contacts .cvLink {
     justify-content: flex-start;
     font-size: 1.2rem;
   }
@@ -124,8 +124,8 @@ export default {
     display: block;
   }
 
-  #contacts .email,
-  #contacts .link {
+  #contacts .emailLink,
+  #contacts .cvLink {
     justify-content: flex-start;
     font-size: 1rem;
   }
