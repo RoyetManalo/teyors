@@ -34,6 +34,10 @@
         <!-- <img src="../assets/logos/mongo.png" alt="" /> -->
       </div>
       <div class="card">
+        <h4>Graphql</h4>
+        <!-- <img src="../assets/logos/mongo.png" alt="" /> -->
+      </div>
+      <div class="card">
         <h4>PHP</h4>
         <!-- <img src="../assets/logos/php.png" alt="" /> -->
       </div>
