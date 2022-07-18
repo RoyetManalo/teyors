@@ -113,7 +113,7 @@ h1 {
   position: relative;
 }
 .skills-content img {
-  margin-top: 8rem;
+  margin-top: 12rem;
   animation: fadein 2s;
 }
 
