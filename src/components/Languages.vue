@@ -14,6 +14,10 @@
         <!-- <img src="../assets/logos/js.png" alt="" /> -->
       </div>
       <div class="card">
+        <h4>Typescript</h4>
+        <!-- <img src="../assets/logos/js.png" alt="" /> -->
+      </div>
+      <div class="card">
         <h4>React.js</h4>
         <!-- <img src="../assets/logos/React.png" alt="" /> -->
       </div>
